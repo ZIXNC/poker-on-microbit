@@ -1,4 +1,4 @@
-input.onButtonPressed(Button.AB, function () {
+input.onButtonPressed(Button.AB, function on_button_pressed_ab() {
     basic.pause(1000)
     basic.showNumber(HEARTS)
     basic.clearScreen()
@@ -28,6 +28,7 @@ input.onButtonPressed(Button.AB, function () {
         basic.showString("NO PAIR")
         basic.clearScreen()
     }
+    
 })
 let SPADES = 0
 let DIAMONDS = 0
@@ -35,5 +36,5 @@ let CLUBS = 0
 let HEARTS = 0
 HEARTS = randint(1, 12)
 CLUBS = randint(1, 12)
-DIAMONDS = randint(2, 12)
-SPADES = randint(2, 12)
+DIAMONDS = randint(1, 12)
+SPADES = randint(1, 12)
